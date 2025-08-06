@@ -3,10 +3,14 @@ import fetch from 'node-fetch';
 const APP_KEY = process.env.SHORT_URL_APP_KEY;
 const API_URL = "https://api-shorturl.nhncloudservice.com/open-api/v1.0/appkeys";
 
-export default async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+// import fetch from 'node-fetch'; 
+// Vercel 환경에서는 기본적으로 fetch가 제공되므로 이 import 문은 필요 없습니다.
+
+// ... 나머지 코드는 그대로 둡니다 ...
+
+module.exports = async (req, res) => {
+    // 기존 export default async (req, res) => { ... } 안의 코드를 여기에 붙여넣으세요.
+};
 
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
