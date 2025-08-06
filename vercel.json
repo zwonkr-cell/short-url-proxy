@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/shorten-url",
+      "destination": "/shorten-url.js"
+    }
+  ]
+}
